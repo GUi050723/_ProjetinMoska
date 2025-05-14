@@ -1,0 +1,6 @@
+a;a;a;1;e;e;e;e
+A;A;A;1;E;E;E;EE
+a;a;a;1;;;;;
+e;e;e;1;;;;;
+gui;gui;gui;1;gui;gui;gui;gui;
+Pikachu;Eletrico;Pokemon;20;Chutasso;força;raio eletroico;picapica;
