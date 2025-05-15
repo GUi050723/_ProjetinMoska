@@ -9,30 +9,57 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.IO;
+using System.Reflection.Emit;
 
 namespace Pokemon
 {
 
     public partial class Menu : Form
     {
-      //  private List<Personagem> personagens = new List<Personagem>();
-        private List<Personagem> personagens = new List<Personagem>
-{
-    //new Personagem("Ash", "Treinador", "Humano", 10, "caminho/para/imagem1.jpg"),
-    //new Personagem("Pikachu", "Elétrico", "Pokémon", 25, "caminho/para/imagem2.jpg")
-};
+        private List<Personagem> personagens = new List<Personagem> {};
+        private int indiceSelecionado = -1;
 
+        private void LstResultados_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                int index = lstResultados.IndexFromPoint(e.Location);
+                if (index != ListBox.NoMatches)
+                {
+                    lstResultados.SelectedIndex = index;
+                    indiceSelecionado = index;
+
+                    contextMenuStrip1.Show(lstResultados, e.Location);
+                }
+            }
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (indiceSelecionado >= 0 && indiceSelecionado < personagens.Count)
+            {
+                Personagem selecionado = personagens[indiceSelecionado];
+                Form editar = new Editar(selecionado);
+                editar.Show();
+                this.Hide();
+            }
+        }
 
         public Menu()
         {
             InitializeComponent();
-            //  personagens.Add(new Personagem("Pikachu"));
-            }
-            private void Menu_Load(object sender, EventArgs e)
-        {
-            CarregarPersonagens();
+            this.Load += Evento_CarregarPersonagens;
+            lstResultados.MouseDown += LstResultados_MouseDown;
         }
-        
+
+        private void AtualizarLista(List<Personagem> lista)
+        {
+            lstResultados.Items.Clear();
+            foreach (var p in lista)
+            {
+                lstResultados.Items.Add(p.ExibirResumo());
+            }
+        }
 
         private void CarregarPersonagens()
         {
@@ -67,9 +94,6 @@ namespace Pokemon
             }
         }
 
-  
-        
-
         private void button1_Click(object sender, EventArgs e)
         {
             Form Form1 = new Cadastro();
@@ -77,50 +101,48 @@ namespace Pokemon
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            Form Form1 = new Editar();
-            Form1.Show();
-            this.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void Evento_CarregarPersonagens(object sender, EventArgs e)
         {
             CarregarPersonagens();
-
-            {
-                string termo = txtBusca.Text.Trim().ToLower();
-
-                var resultados = personagens
-                    .Where(p => p.Nome.ToLower().Contains(termo))
-                    .ToList();
-
-                lstResultados.Items.Clear();
-
-                if (resultados.Count > 0)
-                {
-                    foreach (var p in resultados)
-                    {
-                        lstResultados.Items.Add(p.ExibirResumo());
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Nenhum personagem encontrado.", "Busca", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
+            AtualizarLista(personagens);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            string termo = txtBusca.Text.Trim().ToLower();
 
+            if (string.IsNullOrEmpty(termo))
+            {
+                AtualizarLista(personagens); // Se limpar o campo, mostra tudo
+                return;
+            }
+
+            var resultados = personagens.Where(p =>
+            {
+                string nome = p.Nome.ToLower();
+                if (nome.Length < termo.Length)
+                    return false;
+
+                for (int i = 0; i < termo.Length; i++)
+                {
+                    if (nome[i] != termo[i])
+                        return false;
+                }
+
+                return true;
+            }).ToList();
+
+            AtualizarLista(resultados);
+
+            if (resultados.Count == 0)
+            {
+                MessageBox.Show("Nenhum personagem encontrado.", "Busca", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
-        private void lstResultados_SelectedIndexChanged(object sender, EventArgs e)
+        private void editarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-
+            editarToolStripMenuItem_Click(sender, e);
         }
     }
 }
-
