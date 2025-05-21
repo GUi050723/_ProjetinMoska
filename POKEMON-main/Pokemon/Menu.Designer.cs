@@ -69,12 +69,12 @@ namespace Pokemon
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editarToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(105, 26);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click_1);
             // 
@@ -86,6 +86,7 @@ namespace Pokemon
             this.Controls.Add(this.txtBusca);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lstResultados);
+            this.MaximizeBox = false;
             this.Name = "Menu";
             this.Text = "Menu";
             this.contextMenuStrip1.ResumeLayout(false);

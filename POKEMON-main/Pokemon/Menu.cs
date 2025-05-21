@@ -10,13 +10,14 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.IO;
 using System.Reflection.Emit;
+using System.Web;
 
 namespace Pokemon
 {
 
     public partial class Menu : Form
     {
-        private List<Personagem> personagens = new List<Personagem> {};
+        private List<PersonagemComIndice> personagensComIndices = new List<PersonagemComIndice>();
         private int indiceSelecionado = -1;
 
         private void LstResultados_MouseDown(object sender, MouseEventArgs e)
@@ -36,11 +37,12 @@ namespace Pokemon
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (indiceSelecionado >= 0 && indiceSelecionado < personagens.Count)
+            if (indiceSelecionado >= 0 && indiceSelecionado < personagensComIndices.Count)
             {
-                Personagem selecionado = personagens[indiceSelecionado];
-                Form editar = new Editar(selecionado);
-                editar.Show();
+                Personagem selecionado = personagensComIndices[indiceSelecionado].Personagem;
+                int indiceArquivo = personagensComIndices[indiceSelecionado].IndiceArquivo;
+                Form Editar = new Editar(selecionado, indiceArquivo);
+                Editar.Show();
                 this.Hide();
             }
         }
@@ -48,47 +50,38 @@ namespace Pokemon
         public Menu()
         {
             InitializeComponent();
-            this.Load += Evento_CarregarPersonagens;
+            this.Load += Evento_CarregarpersonagensComIndices;
             lstResultados.MouseDown += LstResultados_MouseDown;
         }
 
-        private void AtualizarLista(List<Personagem> lista)
+        private void AtualizarLista(List<PersonagemComIndice> lista)
         {
             lstResultados.Items.Clear();
             foreach (var p in lista)
             {
-                lstResultados.Items.Add(p.ExibirResumo());
+                lstResultados.Items.Add(p); 
             }
         }
 
-        private void CarregarPersonagens()
+        private void CarregarpersonagensComIndices()
         {
-            personagens.Clear(); // limpa para evitar duplicados
+            personagensComIndices.Clear();
             if (File.Exists("pokemoninfo.txt"))
             {
                 var linhas = File.ReadAllLines("pokemoninfo.txt");
-                foreach (var linha in linhas)
+                for (int i = 0; i < linhas.Length; i++)
                 {
-                    var partes = linha.Split(';');
+                    var partes = linhas[i].Split(';');
                     if (partes.Length >= 9)
                     {
                         string nome = partes[0];
                         string tipo = partes[1];
                         string raca = partes[2];
                         int nivel = int.Parse(partes[3]);
-
-                        Personagem p = new Personagem(nome, tipo, raca, nivel);
-
-                        // movimentos
-                        for (int i = 0; i < 4; i++)
-                        {
-                            p.movimentos[i] = partes[4 + i];
-                        }
-
-                        // imagem
-                        p.imagemPath = partes[8];
-
-                        personagens.Add(p);
+                        string imagemPath = partes[8];
+                        string[] movimentos = new string[] { partes[4], partes[5], partes[6], partes[7] };
+                        Personagem p = new Personagem(nome, tipo, raca, nivel, imagemPath, movimentos);
+                        personagensComIndices.Add(new PersonagemComIndice(p, i));
                     }
                 }
             }
@@ -101,10 +94,10 @@ namespace Pokemon
             this.Hide();
         }
 
-        private void Evento_CarregarPersonagens(object sender, EventArgs e)
+        private void Evento_CarregarpersonagensComIndices(object sender, EventArgs e)
         {
-            CarregarPersonagens();
-            AtualizarLista(personagens);
+            CarregarpersonagensComIndices();
+            AtualizarLista(personagensComIndices);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -113,13 +106,13 @@ namespace Pokemon
 
             if (string.IsNullOrEmpty(termo))
             {
-                AtualizarLista(personagens); // Se limpar o campo, mostra tudo
+                AtualizarLista(personagensComIndices); 
                 return;
             }
 
-            var resultados = personagens.Where(p =>
+            var resultados = personagensComIndices.Where(p =>
             {
-                string nome = p.Nome.ToLower();
+                string nome = p.Personagem.Nome.ToLower();
                 if (nome.Length < termo.Length)
                     return false;
 
@@ -143,6 +136,23 @@ namespace Pokemon
         private void editarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             editarToolStripMenuItem_Click(sender, e);
+        }
+    }
+
+    public class PersonagemComIndice
+    {
+        public Personagem Personagem { get; set; }
+        public int IndiceArquivo { get; set; }
+
+        public PersonagemComIndice(Personagem personagem, int indice)
+        {
+            Personagem = personagem;
+            IndiceArquivo = indice;
+        }
+
+        public override string ToString()
+        {
+            return Personagem.ExibirResumo();
         }
     }
 }

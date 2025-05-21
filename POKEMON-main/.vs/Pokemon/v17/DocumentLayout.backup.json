@@ -1,12 +1,158 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska\\POKEMON-main\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\pokemon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|c:\\users\\nicolas\\documents\\github\\_projetinmoska-main\\pokemon-main\\pokemon\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|c:\\users\\nicolas\\documents\\github\\_projetinmoska-main\\pokemon-main\\pokemon\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\pokemon\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\pokemon\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\pokemon\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|c:\\users\\nicolas\\documents\\github\\_projetinmoska-main\\pokemon-main\\pokemon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{31F090B2-5DAE-41C3-A8D7-0711B297FA10}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Editar.cs",
+              "DocumentMoniker": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Editar.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Editar.cs",
+              "ToolTip": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Editar.cs",
+              "RelativeToolTip": "Pokemon\\Editar.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAxwHEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T04:57:56.022Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Form1.Designer.cs",
+              "RelativeToolTip": "Pokemon\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:35:18.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Menu.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Menu.cs",
+              "ToolTip": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Menu.cs",
+              "RelativeToolTip": "Pokemon\\Menu.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAcwHAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:56:13.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Form1.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Form1.cs",
+              "ToolTip": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Form1.cs",
+              "RelativeToolTip": "Pokemon\\Form1.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAIwGsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T05:36:16.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Editar.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Editar.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Editar.cs",
+              "ToolTip": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Editar.cs [Design]",
+              "RelativeToolTip": "Pokemon\\Editar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T04:46:03.761Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Program.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Program.cs",
+              "ToolTip": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Program.cs",
+              "RelativeToolTip": "Pokemon\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADgvxoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T04:49:44.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Menu.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Menu.cs",
+              "ToolTip": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Menu.cs [Design]",
+              "RelativeToolTip": "Pokemon\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T04:46:02.96Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Form1.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Form1.cs",
+              "ToolTip": "C:\\Users\\Nicolas\\Documents\\GitHub\\_ProjetinMoska-main\\POKEMON-main\\Pokemon\\Form1.cs [Design]",
+              "RelativeToolTip": "Pokemon\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T04:45:51.168Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
