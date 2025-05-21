@@ -50,7 +50,7 @@ namespace Pokemon
             // 
             // txtBusca
             // 
-            this.txtBusca.Location = new System.Drawing.Point(302, 147);
+            this.txtBusca.Location = new System.Drawing.Point(309, 115);
             this.txtBusca.Name = "txtBusca";
             this.txtBusca.Size = new System.Drawing.Size(100, 20);
             this.txtBusca.TabIndex = 3;

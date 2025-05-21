@@ -57,3 +57,16 @@ C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska-main\POKEMON-main\Pokemon\obj\D
 C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska-main\POKEMON-main\Pokemon\bin\Debug\Pokemon.exe.config
 C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska-main\POKEMON-main\Pokemon\bin\Debug\Pokemon.exe
 C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska-main\POKEMON-main\Pokemon\bin\Debug\Pokemon.pdb
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.exe.config
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.Editar.resources
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.Cadastro.resources
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.Menu.resources
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.Properties.Resources.resources
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.csproj.GenerateResource.cache
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.exe
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\obj\Debug\Pokemon.pdb
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\bin\Debug\Pokemon.exe.config
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\bin\Debug\Pokemon.exe
+C:\Users\Nicolas\Documents\GitHub\_ProjetinMoska\POKEMON-main\Pokemon\bin\Debug\Pokemon.pdb

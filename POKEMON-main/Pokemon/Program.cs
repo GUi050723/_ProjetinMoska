@@ -24,7 +24,7 @@ namespace Pokemon
         private string imagemPath;
         private bool validando = false;
         private bool inicializando = true;
-        private bool advalido = true;
+        private bool valido = true;
 
         public Personagem() => inicializando = false;
 
